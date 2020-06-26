@@ -1,0 +1,268 @@
+ </doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>  Shree Ram Electronics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="online.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+ <script >
+    function validate() {
+      if( document.myForm.companyname.value == "" ) {
+            alert( "Please provide your companyname!" );
+            document.myForm.companyname.focus() ;
+            return false;
+         }
+         if( document.myForm.companyadd.value == "" ) {
+            alert( "Please provide your companyaddress!" );
+            document.myForm.companyadd.focus() ;
+            return false;
+         }
+         if( document.myForm.email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+         if( document.myForm.PhoneNo.value == "" ) {
+            alert( "Please enter your PhoneNo!" );
+            document.myForm.PhoneNo.focus() ;
+            return false;
+         }
+          if( document.myForm.order.value == "-1" ) {
+            alert( "Please choose!" );
+            return false;
+         }
+    if( document.myForm.Size.value == "" ) {
+            alert( "Please enter Size of PCB!" );
+            document.myForm.Size.focus() ;
+            return false;
+         }
+         if( document.myForm.numholes.value == "" ) {
+            alert( "Please enter numholes!" );
+            document.myForm.numholes.focus() ;
+            return false;
+         }
+         if( document.myForm.TRACKWidth.value == "" ) {
+            alert( "Please enter TRACKWidth!" );
+            document.myForm.TRACKWidth.focus() ;
+            return false;
+         }
+          if( document.myForm.TRACKspace.value == "" ) {
+            alert( "Please enter TRACKspace!" );
+            document.myForm.TRACKspace.focus() ;
+            return false;
+         }
+          if( document.myForm.SolderMaskFin.value == "" ) {
+            alert( "Please enter SolderMaskFin!" );
+            document.myForm.SolderMaskFin.focus() ;
+            return false;
+         }
+         if( document.myForm.basematerial.value == "" ) {
+            alert( "Please enter basematerial!" );
+            document.myForm.basematerial.focus() ;
+            return false;
+         }
+         
+     }
+$(function () {
+            $("#btnSubmit").click(function () {
+                //Reference the Group of CheckBoxes and verify whether at-least one CheckBox is checked.
+                var checked = $("#CheckBtn input[type=checkbox]:checked").length;
+
+                //Set the Valid Flag to True if at-least one CheckBox is checked.
+                var isValid = checked > 0;
+
+                //Display error message if no CheckBox is checked.
+               $("#spnError")[0].style.display = isValid ? "none" : "block";
+            });
+        });
+ </script>
+     </head>
+<body>
+
+<h1><b> <font face="Georgia, “Times New Roman;,  serif;" color="#aa076b" font  size="10">
+	<marquee direction=""behavior="scroll"scroll amount="10"loop="">
+	<img src="2 logo.jpg"style="width:45px; height:35px;">
+Shree Ram Electronics</marquee> 
+</b></h1></center>	<div class="website">
+<a href="#">Back To Web Site</a></div>
+<form  name="myForm" action="#" method="post"onsubmit = "return(validate())" target="_blank";>
+	
+</td></div><table id="CheckBtn" style="margin-left:auto;margin-right:auto";>
+<div class="modal"><div class="row">
+	<tr>
+<td><div class="col-25">
+<lable for="companyname"><font face="showcard gothic oblique"  font size="3">COMPANY NAME:</font></lable></td></div><div class="col-75">
+><td class="align"><input type="text" name ="companyname" maxlenght="30"placeholder="Company name" size ="40"/>  </td></tr></div></div>
+<tr><div class="row">
+<td><br><div class="col-25">
+<lable for="companyadd"><font face="showcard gothic oblique"  font size="3">COMPANY ADDRESS:</font></lable></td></div><div class="col-75">
+<td class="align"><br><input type="text" name ="companyadd" maxlenght="30"placeholder="Company Address" size ="40"/>  </td></div></div></tr>
+<tr><div class="row">
+<td><br><div class="col-25">
+<lable for="Phone NO>"><font face="showcard gothic oblique"  font size="3">PHONE NO:</font></lable></td></div><div class="col-75">
+<td class="align"><br><input type="text" name ="PhoneNo"maxlenght="20" placeholder="Phone NO"size="40"/> </td></div></div></tr>
+<div class="row">
+<tr><td><div class="col-25">
+ <lable for ="emailadd"> <font face="showcard gothic oblique"   font size="3">EMAIL ADDRESS:</font></lable><br></td></div><div class="col-75">
+<td class="align"><br><input type="text" maxlenght="30" placeholder="Email" name="email"size="40"/>
+</td></div></div>
+</tr>
+<tr><div class="row">
+<td><br><div class="col-25">
+<lable for="GSTNo."><font face="showcard gothic oblique"  font size="3">GST NO:</font></lable></td></div><div class="col-75">
+<td class="align"><br><input type="text" name ="GSTNo." maxlenght="30"placeholder="GST No." size ="40"/>  </td></div></div></tr>
+<tr><div class="row"><td><div class="col-25">
+ <lable for ="count and technology" ><font face="showcard gothic oblique" font size="3"> PCB Layer:</font></lable></td></div>
+<td class="layers"><input type="checkbox" id="pcbl"  name="pcblayers" value="1" onclick="myFun()" >
+  <label for="Layer" style="color:white;font-size:20px"> 1</label>
+  <input type="checkbox" id="pcb2"  name="pcblayers" value="1" onclick="myFun()">
+  <label for="Layer" style="color:white;font-size:20px;"> 2</label>
+  <input type="checkbox" id="pcb3"  name="pcblayers" value="1"onclick="myFun()">
+  <label for="Layer" style="color:white;font-size:20px;"> 3</label><br>
+ <input type="checkbox" id="pcb4" name="pcblayers" value="1"onclick="myFun()">
+  <label for="Layer" style="color:white;font-size:20px"> 4</label>
+  <input type="checkbox" id="pcb5"  name="pcblayers" value="1"onclick="myFun()">
+  <label for="Layer" style="color:white;font-size:20px;"> 5</label>
+  <input type="checkbox" id="pcb6" name="pcblayers" value="1"onclick="myFun()">
+  <label for="Layer" style="color:white;font-size:20px;"> 6</label>
+
+      </td></div>
+</tr>
+<tr>
+<td><div class="row"><div class="col-25">
+<lable for="sizeofpcb"><font face="showcard gothic oblique"   font size="4" id="sizeofpcb">SIZE OF THE PCB:</font></lable></td></div><div class="col-75">
+<td class="align"><input type="text" name ="Size" placeholder="Size "size="30"> </td></div></div></div></tr>
+<tr><div class="row">
+<td><div class="col-25">
+<lable for="panel utilization"><font face="showcard gothic oblique" font size="3"id="panelutilization">PANEL UTILIZATION:  </font></lable></div>
+</td>
+
+<td class="checkb"><input type="checkbox" id="PanelUTL1" name="PANEL" value="1">
+  <label for="vehicle1" style="color:white;font-size:20px"> 18*24inch</label><br>
+  <input type="checkbox" id="PanelUTL2" name="PANEL" value="2">
+  <label for="vehicle2" style="color:white;font-size:20px;"> 20*24inch</label><br>
+  <input type="checkbox" id="PanelUTL3" name="PANEL" value="3">
+  <label for="vehicle3" style="color:white;font-size:20px;"> 21*24inch</label>
+</div>
+</tr>
+<td><div class="row"><br><div class="col-25">
+<lable for="number of Holes"><font face="showcard gothic oblique"  font size="3">MINIMUM SIZE OF HOLES:</font></lable></td></div><div class="col-75">
+<td class="align"><input type="text" name ="numholes"placeholder="Number of Holes"size="30"/> <br></td></div></div></tr>
+
+<tr>
+<td><div class="row"><div class="col-25">
+<lable for="Trace Width"><font face="showcard gothic oblique" font size="3"id="tracewidth">TRACK WIDTH:</font></lable></td></div><div class="col-75">
+<td class="align"><input type="text" name ="TRACKWidth"placeholder="Trace Width"size="30"/></td></div></div></tr>
+<tr>
+<td><div class="row"><div class="col-25">
+<lable for="trace spacing"><font face="showcard gothic oblique"font size="3"id="tracespacing">TRACK SPACING:</font></lable></td>
+<td class="align"></div><div class="col-75">
+<br><input type="text" name ="TRACKspace"placeholder="Trace Spacing"size="30"/> <br></td></div>
+</div></tr>
+<tr><div class="row">
+<td><br><br><div class="col-25">
+<lable for="Solder Mask Finish Of Board"><font face="showcard gothic oblique"   font size="3"id="soldermaskfinish">SOLDER MASK FINISH :</font></lable></td></div><div class="col-75">
+<td class="align"> <input type="text" name ="SolderMaskFin"placeholder="Solder Mask Finish"size="30"/></td></div></div></tr>
+<tr><div class="row">
+<td><div class="col-25">
+<lable for="Solder Mask color"><font face="showcard gothic oblique"  font size="3">SOLDER MASK COLOUR :</font></lable></div>
+<td ><input type=button class="btn3" name ="color"style="background-color:red"onclick="alert('You clicked RED!')">   
+<input type=button class="btn3" name ="color"style="background-color:Yellow"onclick="alert('You clicked YELLOW!')">  
+<input type=button class="btn3" name ="color"style="background-color:Black"onclick="alert('You clicked BLACK!')"> 
+<input type=button class="btn3" name ="color"style="background-color:White"onclick="alert('You clicked WHITE!')">
+<input type=button class="btn3" name ="color"style="background-color:Blue"onclick="alert('You clicked BLUE!')">
+<input type=button class="btn3" name ="color"style="background-color:Green"onclick="alert('You clicked GREEN!')">
+</td></div>
+</tr>
+<tr>
+<td><div class="row"><div class="col-25">
+<lable for="Base Material"><font face="showcard gothic oblique"   font size="3">BASE MATERIAL:</font></lable></td></div><div class="col-75">
+<td class="align"><input type="text" name ="basematerial"placeholder="Base Material"size="30"/></td></div></div></tr>
+<tr>
+<td><div class="row"><div class="col-25">
+<lable for="Laminate and Copper Thickness"><font face="showcard gothic oblique" font size="3"id="copperthickness"> COPPER THICKNESS(micorns):</font></lable></div>
+<td class="radio"> <input type="radio" id="Thickness1"  name="Thickness[]" value="thick1" onclick="check()">
+  <label for="Thickness" style="font-size:20px; color:white;">18</label>
+  <input type="radio" id="Thickness2"name="Thickness[]" value="thick2" />
+  <label for="Thickness"style="font-size:20px;color:white;">35</label> 
+  <input type="radio" id="Thickness3"  name="Thickness[]" value="thick3">
+  <label for="Thickness" style="font-size:20px;color:white;">70</label>
+</tr> <br>
+<tr><div class="row">
+<td><div class="col-25">
+<lable for="Laminate and Copper Thickness"><font face="showcard gothic oblique"   font size="3"id="laminatethickness"> LAMINATE THICKNESS(mm)</font></lable></div>
+
+		<td class="checkb"><input type="checkbox" id="Laminate1" name="Laminate-Thickness" value="0.2">
+  <label for="laminatethickness" style="color:white;font-size:20px"> 0.2</label>
+  <input type="checkbox" id="LAMINATE2" name="Laminate-Thickness" value="3.2">
+  <label for="laminatethickness" style="color:white;font-size:20px;"> 3.2</label>
+  
+ </br>
+</tr>
+<tr>
+<td><div class="row"><div class="col-25">
+<lable for="Laminate and Copper Thickness"><font face="showcard gothic oblique"   font size="3"id="copperthickness"> COPPER CLAD LAMINATE:</font></lable></div>
+<td class="checkb"><input type="checkbox" id="Copper1" name="Copper-Thickness" value="FR1">
+  <label for="Copperthickness" style="color:white;font-size:20px"> FR1</label>
+  <input type="checkbox" id="Copper2" name="Copper-Thickness" value="FR2">
+  <label for="laminatethickness" style="color:white;font-size:20px;"> FR2</label>
+<input type="checkbox" id="Copper1" name="Copper-Thickness" value="FR3">
+  <label for="Copperthickness" style="color:white;font-size:20px"> FR3</label>
+  <input type="checkbox" id="Copper2" name="Copper-Thickness" value="FR4">
+  <label for="laminatethickness" style="color:white;font-size:20px;"> FR4</label><br>
+  
+ </div></div>
+</tr> 
+<tr><div class="row">
+<td> <div class="col-25">
+<lable for="Payment Terms"><font face="showcard gothic oblique" font size="3"id="paymentterms">PAYMENT TERMS:</font></lable></div></td>
+<td class="radio"> <input type="radio" id="Cash"  name="paymentterms" value="Cash">
+  <label for="CASH" style="font-size:20px; color:white;">CASH</label>
+  <input type="radio" id="online" name="paymentterms" value="online" />
+  <label for="online"style="font-size:20px;color:white;">online</label> 
+</tr>
+</div></div>
+<tr>
+<div class="row">
+<div class="25">
+<td><lable>DO YOU HAVE ANY OF THESE? </lable></td></div>
+ <td> <div class="col-75"><select class="order-inp"name="order">
+
+      <option   value="-1"> Please Choose</option>
+    <option   value= "1">Schematic Diagram </option>
+    <option value= "2">Sample Of PCB</option>
+    <option value= "3">Gerba Data</option></select></div></div></td></td></tr>
+    
+</div>
+
+<tr><div class="row"><div class="25"><td><br><br><lable for="remarks"><font face="showcard gothic oblique"  font size="3">REMARKS</font></lable></div></td>
+<td><br><div class="col-75"><textarea cols="50"rows="5" name="remarks" id="remarks"></textarea></td></div></div></tr>
+<tr><div class="row">
+<td cols="2" style =text="">
+<input type = "submit" id="btnSubmit"value="SUBMIT"/></td></div>
+
+</table> <span id="spnError" class="error" style="display: none;color:red;">Please Select Only One .</span>
+</form></div>
+ <script >
+    
+    	
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+</body>
+</html>
