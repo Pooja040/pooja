@@ -7,68 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-<script >
-    function validate(form) {
-    	 
-      if( document.myForm.COMPNAME.value == "" ) {
-            alert( "Please provide your companyname!" );
-            document.myForm.COMPNAME.focus() ;
-            return false;
-         }
-    if( document.myForm.COMPAdd.value == "" ) {
-            alert( "Please provide your company address!" );
-            document.myForm.COMPAdd.focus() ;
-            return false;
-         }
-         if( document.myForm.PhoneNo.value == "" ) {
-            alert( "Please enter your Phone No!" );
-            document.myForm.PhoneNo.focus() ;
-            return false;
-         }
-         if( document.myForm.email.value == "" ) {
-            alert( "Please provide your Email!" );
-            document.myForm.email.focus() ;
-            return false;
-         }
-    if( document.myForm.Size.value == "" ) {
-            alert( "Please enter Size of PCB!" );
-            document.myForm.Size.focus() ;
-            return false;
-         }
-         if( document.myForm.numholes.value == "" ) {
-            alert( "Please enter numholes!" );
-            document.myForm.numholes.focus() ;
-            return false;
-         }
-         if( document.myForm.TRACKWidth.value == "" ) {
-            alert( "Please enter TRACKWidth!" );
-            document.myForm.TRACKWidth.focus() ;
-            return false;
-         }
-          if( document.myForm.TRACKspace.value == "" ) {
-            alert( "Please enter TRACKspace!" );
-            document.myForm.TRACKspace.focus() ;
-            return false;
-         }
-          if( document.myForm.SolderMaskFin.value == "" ) {
-            alert( "Please enter SolderMaskFin!" );
-            document.myForm.SolderMaskFin.focus() ;
-            return false;
-         }
-         if( document.myForm.basematerial.value == "" ) {
-            alert( "Please enter basematerial!" );
-            document.myForm.basematerial.focus() ;
-            return false;
-         }
-
-         if( document.myForm.CCL.value == "" ) {
-            alert( "Please provide your country!" );
-            return false;
-         }
-         return true;
-     }
-     </script>
+   
 
 <style type="text/css">
 	*{
@@ -256,7 +195,7 @@ Shree Ram Electronics </marquee>
     </div>
 			<br><br>
 
-			<button type="submit" class="btn btn-block submit" > Submit</button>
+			<button type="submit" class="btn btn-block submit"onclick="thank You! Your Form has submitted" > Submit</button>
 			</form>
 		</div><div class="col-md-4 col-sm-4 col-xs-12"></div>
 	</div> 
