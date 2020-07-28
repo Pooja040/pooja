@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> responsive image</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   
+
+<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+		
+	}
+	body{
+background:url('luck.jpg') no-repeat;
+width:100%;
+height:100%;
+
+}
+.log{
+	
+	padding:40px 60px;
+	margin-top:50px;
+	-webkit-box-shadow: -4px 2px 62px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 2px 62px 2px rgba(0,0,0,0.75);
+box-shadow: -4px 2px 62px 2px rgba(0,0,0,0.75);
+}
+img{
+	width: 150px;
+	margin-left:25%;
+}
+h1{
+	color:#aa076b ;
+ font-family: Georgia, Times New Roman, serif;
+ text-align:center;
+font-weight: bolder;
+margin-top:-25px;
+}
+.lable{
+	font-size:18px;
+	 font-family: Georgia, Times New Roman, serif;
+  color:white;
+}
+
+input[type="text"]{
+    font-size: 1.6rem;
+    color: #010100;
+    width: 100%;
+    line-height: 35px;
+    padding-left: 3rem;
+}
+.radio-inline{
+  color:white;
+}
+.submit{
+	background:#ff7230;
+	font-size: 20px;
+	color:#fff;
+	text-transform: capitalize;
+	outline:none;
+	border:none;
+	transition: all 0.3s linear;
+	-webkit-transition:all 0.3s linear;
+}
+.submit:hover{
+	background: #fff;
+	color:#ff7230;
+	border:1px  solid #ff7230;
+}
+</style>
+</head>
+<body>
+	
+
+	
+<div class="container-fluid bg">
+	<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+		<form name="my-Form" action="post" method="post" onsubmit = "return(validate(this))" target="_blank"; class="log" data-netlify="true">
+			<h1>
+	<marquee direction=""behavior="scroll"scroll amount="10"loop="">
+	<img src="2 logo.jpg"style="width:45px; height:35px;">
+Shree Ram Electronics </marquee> 
+ </h1> 	
+			<img  class= "img img responsive img-circle"src="com.gif">
+			<div class="form-group">
+				<label for="COMPANYNAME" class="lable">COMPANY NAME:</label>
+				<input type="COMPNAME"  class="form-cotrol" id="COMPNAME"name="COMPNAME" placeholder="COMPANY NAME" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="COMPANYAdd" class="lable">COMPANY ADDRESS:</label>
+				<input type="COMPAdd"  class="form-cotrol" id="COMPAdd"name="COMPAdd" placeholder="COMPANY ADDRESS" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="PhoneNo" class="lable">Phone No:</label>
+				<input type="PhoneNo"  class="form-cotrol" id="PhoneNo"name="PhoneNo" placeholder="PhoneNo" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="email" class="lable">EMAIL ADDRESS:</label>
+				<input type="email"  class="form-cotrol" id="email" name="email" placeholder="Email"size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="GSTNO" class="lable"> GST NO: </label>
+				<input type="text"  class="form-cotrol" id="GST-NO"name="GSTNO" placeholder="GST NO" size ="30" maxlenght="30">
+			</div>
+			<label for="PCB LAYER" class="lable">PCB LAYER:</label><br>
+			<label class="radio-inline "><input type="radio" name="pcblayers" id="layer1"> 1</label>
+			<label class="radio-inline "><input type="radio" name="pcblayers"id="layer2"> 2</label>
+			<label class="radio-inline "><input type="radio" name="pcblayers"id="layer3"> 3</label>
+			<label class="radio-inline "><input type="radio" name="pcblayers"id="layer3"> 4</label>
+			<label class="radio-inline "><input type="radio" name="pcblayers"id="layer5"> 5</label>
+			<label class="radio-inline "><input type="radio" name="pcblayers"id="layer6"> 6</label>
+			<div><p id="Mess" style=color:red; display:none;></p></div>
+			
+			<div class="form-group">
+				<label for="Size" class="lable">Size Of PCB:</label>
+				<input type="Size"  class="form-cotrol" id="email"name="Size" placeholder="Size Of PCB"size ="30" maxlenght="30">
+			</div>
+			<label for="PANNELUTILIZATION" class="lable">PANNEL UTILIZATION:</label><br>
+			<label class="radio-inline "><input type="radio" name="PANNEL" > 18*24inch</label>
+			<label class="radio-inline "><input type="radio" name="PANNEL"> 20*24inch</label>
+			<label class="radio-inline "><input type="radio" name="PANNEL"> 21*24inch</label>
+			<br><br>
+			<div class="form-group">
+				<label for="numholes" class="lable">MINIMUM SIZE OF HOLES:</label>
+				<input type="numholes"  class="form-cotrol" id="numholes"name="numholes" placeholder="MINIMUM SIZE OF HOLES" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="TRACKWIDTH" class="lable">TRACK WIDTH:</label>
+				<input type="TRACKWidth"  class="form-cotrol" id="TRACKWidth"name="TRACKWidth" placeholder="TRACK WIDTH" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="TRACKspace" class="lable">TRACK SPACING:</label>
+				<input type="TRACKspace"  class="form-cotrol" id="TRACKspace"name="TRACKspace" placeholder="TRACK SPACING" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="SolderMaskFin" class="lable">SOLDER MASK FINISH :</label>
+				<input type="SolderMaskFin"  class="form-cotrol" id="SolderMaskFin"name="SolderMaskFin" placeholder="SOLDER MASK FINISH" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group"><label for="SolderMaskcol" class="lable">SOLDER MASK COLOUR :</label><br>
+ <input type=button class="btn btn-link" name ="color"style="background-color:red"onclick="alert('You clicked RED!')">   
+<input type=button class="btn btn-warning" name ="color"style="background-color:Yellow"onclick="alert('You clicked YELLOW!')">  
+<input type=button class="btn black" name ="color"style="background-color:Black"onclick="alert('You clicked BLACK!')"> 
+<input type=button class="btn white" name ="color"style="background-color:White"onclick="alert('You clicked WHITE!')">
+<input type=button class="btn btn-primary" name ="color"style="background-color:Blue"onclick="alert('You clicked BLUE!')">
+<input type=button class="btn btn-success" name ="color"style="background-color:Green"onclick="alert('You clicked GREEN!')"><br><br>
+			 
+			<div class="form-group">
+				<label for="Thickness" class="lable">COPPER THICKNESS(oz):</label>
+				<input type="Thickness"  class="form-cotrol" id="Thickness"name="Thickness" placeholder="COPPER THICKNESS" size ="30" maxlenght="30">
+			</div>
+			<div class="form-group">
+				<label for="LAMINATEThickness" class="lable">LAMINATE THICKNESS(oz):</label>
+			<label class="radio-inline "><input type="radio" name="LAMINATEThickness" > 0.2 </label>
+			<label class="radio-inline "><input type="radio" name="LAMINATEThickness"> 3.2</label>
+			<br><br>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      COPPER CLAD LAMINATE<span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu" name="CCL">
+  <li class="text-center"value="1">FR 1</li>
+  	<li class="text-center" value="2">FR 2</li>
+  		<li class="text-center" value="3">FR 3</li>
+  			<li class="text-center" value="4">FR 4</li>
+</div>
+<br><br>
+		<div class="form-group">
+				<label for="paymentterms" class="lable">PAYMENT TERMS:</label><br>
+			<label class="radio-inline "><input type="radio" name="paymentterms" > CASH </label>
+			<label class="radio-inline "><input type="radio" name="paymentterms"> ONLINE</label>
+			<br><br>
+			<div class="form-group">
+				<label for="Thickness" class="lable">DO YOU HAVE ANY OF THESE?</label>
+			<div class="btn-group">
+				<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+      Please Choose <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+  <li class="text-center">SCHEMATIC DIAGRAM</li>
+  	<li class="text-center">SAMPLE OF PCB </li>
+  		<li class="text-center">GERBER DATA</li>		
+</div>
+<br>
+<br>
+			<div class="form-group">
+      <label for="comment" class="lable">Comment:</label>
+      <textarea class="form-control" rows="4" id="comment"></textarea>
+    </div>
+			<br><br>
+
+			<button type="submit" class="btn btn-block submit"onclick="thank You! Your Form has submitted" > Submit</button>
+			</form>
+		</div><div class="col-md-4 col-sm-4 col-xs-12"></div>
+	</div> 
+</div>
+</body>
+</html>
